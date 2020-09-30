@@ -43,7 +43,7 @@ def main():
             st.subheader("ROC Curve")
             plot_roc_curve(model, x_test, y_test)
             st.pyplot()
-            #st.set_option('deprecation.showPyplotGlobalUse', False)
+            st.set_option('deprecation.showPyplotGlobalUse', False)
             #fig, ax = matplotlib.pyplot.subplots()
             #ax.plot([0,0.5,1],[0,0.5,1])
             #st.pyplot(fig)
