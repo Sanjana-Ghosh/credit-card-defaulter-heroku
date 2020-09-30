@@ -19,7 +19,7 @@ def main():
 
     @st.cache(persist=True)
     def load_data():
-        data = pd.read_csv("C:\\Users\\DELL PC\\Music\\Credit_card_defaulter_analysis\\cleaned_data.csv")
+        data = pd.read_csv("cleaned_data.csv")
         labelencoder=LabelEncoder()
         for col in data.columns:
             data[col] = labelencoder.fit_transform(data[col])
